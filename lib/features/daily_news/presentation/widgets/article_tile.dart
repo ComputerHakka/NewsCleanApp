@@ -27,7 +27,7 @@ class ArticleWidget extends StatelessWidget {
   }
 
   Widget _buildImage(BuildContext context) {
-    return article!.urlToImage!.isNotEmpty
+    return article!.urlToImage!.contains('.com')
         ? CachedNetworkImage(
             imageUrl: article!.urlToImage!,
             errorWidget: (context, url, error) => _buildErrorWidget(context),
