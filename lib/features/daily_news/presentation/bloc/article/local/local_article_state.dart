@@ -5,7 +5,7 @@ sealed class LocalArticleState extends Equatable {
   const LocalArticleState({this.articles});
 
   @override
-  List<Object> get props => [articles!];
+  List<Object?> get props => [articles];
 }
 
 final class LocalArticleLoading extends LocalArticleState {
